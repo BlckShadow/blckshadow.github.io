@@ -641,7 +641,7 @@ function initMap(){
           marker: {
               address: gmMarkerAddress,
               options: {
-                  icon: "images/loc-marker-kr.png"
+                  icon: "blckshadow.github.io/images/loc-marker-kr.png"
               }
           },
           map: {
