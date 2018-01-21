@@ -355,7 +355,7 @@ transform: translate(-50%, -50%)
   }
 
   to {
-    width: 80%;
+    width: 50%;
   }
 }
 @keyframes skill_4 {
@@ -364,7 +364,7 @@ transform: translate(-50%, -50%)
   }
 
   to {
-    width: 80%;
+    width: 50%;
   }
 }
 @-webkit-keyframes skill_5 {
@@ -373,7 +373,7 @@ transform: translate(-50%, -50%)
   }
 
   to {
-    width: 80%;
+    width: 50%;
   }
 }
 @keyframes skill_5 {
@@ -382,7 +382,7 @@ transform: translate(-50%, -50%)
   }
 
   to {
-    width: 80%;
+    width: 50%;
   }
 }
 @-webkit-keyframes skill_6 {
@@ -391,7 +391,7 @@ transform: translate(-50%, -50%)
   }
 
   to {
-    width: 80%;
+    width: 50%;
   }
 }
 @keyframes skill_6 {
@@ -400,7 +400,7 @@ transform: translate(-50%, -50%)
   }
 
   to {
-    width: 80%;
+    width: 50%;
   }
 }
 @-webkit-keyframes skill_7 {
@@ -409,7 +409,7 @@ transform: translate(-50%, -50%)
   }
 
   to {
-    width: 80%;
+    width: 50%;
   }
 }
 @keyframes skill_7 {
@@ -418,6 +418,6 @@ transform: translate(-50%, -50%)
   }
 
   to {
-    width: 80%;
+    width: 50%;
   }
 }
