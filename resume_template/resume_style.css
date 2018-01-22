@@ -1,25 +1,47 @@
-@import url(https://fonts.googleapis.com/css?family=Varela+Round);
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700);
+@import url(http://fonts.googleapis.com/css?family=Varela+Round);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700);
 *, *::after, *::before {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-html, body {
-  height: 100%;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
   font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 1.5em;
 }
 
 a {
-  color: #66cc99;
+  color: #5387df;
   text-decoration: none;
 }
 
+.button, .button:active, .button:visited, .button:focus{
+	color: #fff;
+	background-color: transparent;
+    border: 2px solid #2869D6;
+	border-radius:3px;
+	outline: none;
+    margin-top: 30px;
+	padding: 10px 40px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	transition: all 0.5ms;
+    min-width: 25px;  // add this if you want
+    max-width: 100px;
+    position: relative;
+margin-left: 85px;
+margin-right: 40px;
+transform: translate(-50%, -50%)
+    
+
+}
+.button:hover{
+	background: #2869D6;
+	border-color: #2869D6;
+
+}
 .clearfix::after, .clearfix::before {
   content: " ";
   display: table;
@@ -37,7 +59,6 @@ a {
 .resume-wrapper {
   position: relative;
   text-align: center;
-  height: 100%;
 }
 
 .container {
@@ -45,7 +66,7 @@ a {
 }
 
 .profile {
-  background: #fff;
+  background: white;
   width: 40%;
   float: left;
   color: #9099a0;
@@ -55,10 +76,6 @@ a {
     width: 100%;
   }
 }
-.profile .name-wrapper {
-  float: left;
-  width: 60%;
-}
 .profile h1 {
   font-size: 2.5em;
   text-align: left;
@@ -66,91 +83,38 @@ a {
   color: #4a4e51;
   text-transform: uppercase;
   line-height: 1em;
-  padding-top: 40px;
-}
-@media (max-width: 1200px) {
-  .profile h1 {
-    padding-top: 20px;
-  }
+  float: left;
+  padding-top: 10px;
 }
 @media (max-width: 450px) {
   .profile h1 {
     font-size: 1.8em;
-    padding-top: 20px;
   }
 }
 .profile li {
   margin-bottom: 10px;
 }
-.profile .picture-resume-wrapper {
-  width: 40%;
-  display: block;
-  float: left;
-}
-@media (max-width: 1200px) {
-  .profile .picture-resume-wrapper {
-    width: 100%;
-  }
-}
 .profile .picture-resume {
-  width: 220px;
-  height: 220px;
+  width: 100px;
+  height: 100px;
+  float: left;
+  background: #fff;
+  -webkit-background-size: cover;
   background-size: cover;
+  background-image: url('kr-logo.png');
   border-radius: 50%;
-  margin-right: 0px;
-  display: table;
-  position: relative;
+  margin-right: 10px;
   vertical-align: middle;
-}
-.profile .picture-resume span {
-  display: table-cell;
-  vertical-align: middle;
-  position: relative;
-  margin: 0 auto;
-  z-index: 10;
-  text-align: center;
-}
-.profile .picture-resume img {
-  border-radius: 50%;
-  width: 130px;
-}
-@media (max-width: 1500px) {
-  .profile .picture-resume img {
-    width: 80px;
-  }
-}
-@media (max-width: 1200px) {
-  .profile .picture-resume img {
-    width: 120px;
-    height: 120px;
-  }
-}
-@media (max-width: 1500px) {
-  .profile .picture-resume {
-    width: 150px;
-    height: 150px;
-  }
-}
-@media (max-width: 1200px) {
-  .profile .picture-resume {
-    width: 200px;
-    height: 200px;
-  }
 }
 @media (max-width: 450px) {
   .profile .picture-resume {
-    width: 180px;
-    height: 180px;
+    width: 80px;
+    height: 80px;
   }
 }
 .profile .contact-info {
   margin-top: 100px;
   font-weight: 300;
-}
-@media (max-width: 1200px) {
-  .profile .contact-info {
-    margin-top: 70px;
-  }
 }
 @media (max-width: 450px) {
   .profile .contact-info {
@@ -173,14 +137,8 @@ a {
 .profile .contact-presentation {
   text-align: left;
   font-weight: 300;
-  margin-top: 100px;
-  margin-bottom: 100px;
-}
-@media (max-width: 1200px) {
-  .profile .contact-presentation {
-    margin-top: 70px;
-    margin-bottom: 70px;
-  }
+  margin-top: 120px;
+  margin-bottom: 120px;
 }
 @media (max-width: 850px) {
   .profile .contact-presentation {
@@ -188,25 +146,15 @@ a {
     margin-bottom: 50px;
   }
 }
-.profile svg {
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-.profile .st0, .profile .st1 {
-  fill: #66cc99;
-}
 
 .experience {
   background: #3d3e42;
   width: 60%;
   float: left;
   position: relative;
+  height: 100%;
   color: #9099a0;
   font-weight: 300;
-  min-height: 100%;
-  min-height: 100vh;
 }
 @media (max-width: 850px) {
   .experience {
@@ -214,7 +162,7 @@ a {
   }
 }
 .experience h3.experience-title {
-  color: #66cc99;
+  color: #5387df;
   text-align: left;
   text-transform: uppercase;
   font-size: 1.2em;
@@ -253,7 +201,7 @@ a {
 }
 
 .section-padding {
-  padding: 60px 60px 40px 40px;
+  padding: 80px 60px 40px 40px;
 }
 @media (max-width: 850px) {
   .section-padding {
@@ -283,7 +231,7 @@ a {
   padding-right: 8%;
 }
 .section-wrapper h3.section-title {
-  color: #66cc99;
+  color: #5387df;
   text-align: left;
   text-transform: uppercase;
   font-size: 1.2em;
@@ -305,51 +253,52 @@ a {
 .section-wrapper .skill-percentage::before {
   content: "";
   height: 6px;
-  background: #66cc99;
+  background: #5387df;
   position: absolute;
   margin-top: 3px;
   bottom: 0;
 }
 .section-wrapper .skill-percentage:nth-child(1)::before {
   width: 80%;
-  -webkit-animation: skill_1 0.6s ease;
-          animation: skill_1 0.6s ease;
+  -webkit-animation: skill_1 1s ease;
+  animation: skill_1 1s ease;
 }
 .section-wrapper .skill-percentage:nth-child(2)::before {
   width: 90%;
-  -webkit-animation: skill_2 0.6s ease;
-          animation: skill_2 0.6s ease;
+  -webkit-animation: skill_2 1s ease;
+  animation: skill_2 1s ease;
 }
 .section-wrapper .skill-percentage:nth-child(3)::before {
   width: 50%;
-  -webkit-animation: skill_3 0.6s ease;
-          animation: skill_3 0.6s ease;
+  -webkit-animation: skill_3 1s ease;
+  animation: skill_3 1s ease;
 }
 .section-wrapper .skill-percentage:nth-child(4)::before {
   width: 60%;
-  -webkit-animation: skill_4 0.6s ease;
-          animation: skill_4 0.6s ease;
+  -webkit-animation: skill_4 1s ease;
+  animation: skill_4 1s ease;
 }
 .section-wrapper .skill-percentage:nth-child(5)::before {
   width: 70%;
-  -webkit-animation: skill_5 0.6s ease;
-          animation: skill_5 0.6s ease;
+  -webkit-animation: skill_5 1s ease;
+  animation: skill_5 1s ease;
 }
 .section-wrapper .skill-percentage:nth-child(6)::before {
   width: 70%;
-  -webkit-animation: skill_6 0.6s ease;
-          animation: skill_6 0.6s ease;
+  -webkit-animation: skill_6 1s ease;
+  animation: skill_6 1s ease;
 }
 .section-wrapper .skill-percentage:nth-child(7)::before {
   width: 70%;
-  -webkit-animation: skill_6 0.6s ease;
-          animation: skill_6 0.6s ease;
+  -webkit-animation: skill_6 1s ease;
+  animation: skill_6 1s ease;
 }
 
 @-webkit-keyframes skill_1 {
   from {
     width: 0%;
   }
+
   to {
     width: 80%;
   }
@@ -359,6 +308,7 @@ a {
   from {
     width: 0%;
   }
+
   to {
     width: 80%;
   }
@@ -367,6 +317,7 @@ a {
   from {
     width: 0%;
   }
+
   to {
     width: 90%;
   }
@@ -375,6 +326,7 @@ a {
   from {
     width: 0%;
   }
+
   to {
     width: 90%;
   }
@@ -383,6 +335,7 @@ a {
   from {
     width: 0%;
   }
+
   to {
     width: 50%;
   }
@@ -391,6 +344,7 @@ a {
   from {
     width: 0%;
   }
+
   to {
     width: 50%;
   }
@@ -399,6 +353,7 @@ a {
   from {
     width: 0%;
   }
+
   to {
     width: 60%;
   }
@@ -407,6 +362,7 @@ a {
   from {
     width: 0%;
   }
+
   to {
     width: 60%;
   }
@@ -415,6 +371,7 @@ a {
   from {
     width: 0%;
   }
+
   to {
     width: 70%;
   }
@@ -423,6 +380,7 @@ a {
   from {
     width: 0%;
   }
+
   to {
     width: 70%;
   }
@@ -431,6 +389,7 @@ a {
   from {
     width: 0%;
   }
+
   to {
     width: 70%;
   }
@@ -439,6 +398,7 @@ a {
   from {
     width: 0%;
   }
+
   to {
     width: 70%;
   }
@@ -447,6 +407,7 @@ a {
   from {
     width: 0%;
   }
+
   to {
     width: 70%;
   }
@@ -455,6 +416,7 @@ a {
   from {
     width: 0%;
   }
+
   to {
     width: 70%;
   }
