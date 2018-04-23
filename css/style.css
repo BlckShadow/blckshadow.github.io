@@ -6115,6 +6115,10 @@ select.input-border {
   color: #fff; 
 }
 
+.footer2-soc-a a:hover{
+color: #1c478d !important;
+}
+
 /* #FOOTER 3 #NEW-2
 =====================================================*/
 
