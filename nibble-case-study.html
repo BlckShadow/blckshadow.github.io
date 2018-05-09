@@ -65,6 +65,8 @@
 	<body>
 	
 		<!-- LOADER -->	
+	
+		<!-- LOADER -->	
 		<div id="loader-overflow">
       <div id="loader3" class="loader-cont">Please enable JS</div>
     </div>	
@@ -75,11 +77,11 @@
 				<!--[if lte IE 8]>
 				<div id="ie-container">
 					<div id="ie-cont-close">
-						<a href="#" onclick="javascript&#058;this.parentNode.parentNode.style.display="none"; return false;"><img src="images/ie-warn/ie-warning-close.jpg" style="border: none;" alt="Close"></a>
+						<a href='#' onclick='javascript&#058;this.parentNode.parentNode.style.display="none"; return false;'><img src='images/ie-warn/ie-warning-close.jpg' style='border: none;' alt='Close'></a>
 					</div>
 					<div id="ie-cont-content" >
 						<div id="ie-cont-warning">
-							<img src="images/ie-warn/ie-warning.jpg" alt="Warning!">
+							<img src='images/ie-warn/ie-warning.jpg' alt='Warning!'>
 						</div>
 						<div id="ie-cont-text" >
 							<div id="ie-text-bold">
@@ -90,77 +92,63 @@
 							</div>
 						</div>
 						<div id="ie-cont-brows" >
-							<a href="http://www.firefox.com" target="_blank"><img src="images/ie-warn/ie-warning-firefox.jpg" alt="Download Firefox"></a>
-							<a href="http://www.opera.com/download/" target="_blank"><img src="images/ie-warn/ie-warning-opera.jpg" alt="Download Opera"></a>
-							<a href="http://www.apple.com/safari/download/" target="_blank"><img src="images/ie-warn/ie-warning-safari.jpg" alt="Download Safari"></a>
-							<a href="http://www.google.com/chrome" target="_blank"><img src="images/ie-warn/ie-warning-chrome.jpg" alt="Download Google Chrome"></a>
+							<a href='http://www.firefox.com' target='_blank'><img src='images/ie-warn/ie-warning-firefox.jpg' alt='Download Firefox'></a>
+							<a href='http://www.opera.com/download/' target='_blank'><img src='images/ie-warn/ie-warning-opera.jpg' alt='Download Opera'></a>
+							<a href='http://www.apple.com/safari/download/' target='_blank'><img src='images/ie-warn/ie-warning-safari.jpg' alt='Download Safari'></a>
+							<a href='http://www.google.com/chrome' target='_blank'><img src='images/ie-warn/ie-warning-chrome.jpg' alt='Download Google Chrome'></a>
 						</div>
 					</div>
 				</div>
 				<![endif]-->
 				
-				<!-- HEADER 1 FONT WHITE TRANSPARENT -->
-        <div class="header-black-bg"></div> <!-- NEED FOR TRANSPARENT HEADER ON MOBILE -->
-				<header id="nav" class="header header-1 header-black">
+				<!-- HEADER 3 MIN SIDE MENU 2 FONT BLACK TRANSPARENT -->
+				<header id="nav-stick" class="header header-1 header-side-menu">
 				  <div class="header-wrapper">
-					<div class="container-m-30 clearfix">
-					  <div class="logo-row">
-					  
-						<!-- LOGO --> 
-						<div class="logo-container-2">
-                <div class="logo-2">
-                  <a href="index.html" class="clearfix">
-                    <img src="images/logo-kr-01.svg" class="logo-img" alt="Logo">
-                  </a>
+            <div class="container-m-30 clearfix">
+              <div class="logo-row">
+              
+              <!-- LOGO --> 
+              <div class="logo-container-2">
+                  <div class="logo-2">
+                    <a href="index.html" class="clearfix">
+                      <img src="images/logo-kr-01.svg" class="logo-img" alt="Logo">
+                    </a>
+                  </div>
                 </div>
-              </div>
-                          <!-- BUTTON --> 
-                          <div class="menu-btn-respons-container2">
-                              <a id="cd-menu-trigger" href="#"><span class="cd-menu-icon"></span></a>
-                          </div>
-                        </div> <!-- END header-wrapper -->
-                        </header>
+             </div>
+            </div>
 
-                      <!-- SIDE MENU -->      
-                      <nav id="cd-lateral-nav" class="font-poppins">
-
-
-                          <ul class="cd-navigation cd-single-item-wrapper">
-                              <li><a href="index.html">Home</a></li>
-                              <li><a href="about-me.html">About</a></li>
-                              <li><a href="portfolio.html">Portfolio</a></li>
-                              <li><a href="resume_template/resume.html">Resume</a></li>
-                              <li><a href="contact.html">Contact</a></li>
-                          </ul> <!-- cd-single-item-wrapper -->
-
-
-
-                          <div class="cd-navigation socials text-center">
-                              <div class="footer2-soc-a">
-                                  <a href="https://www.instagram.com/splashofink/" title="Instagram" target="_blank"><i class="fa fa-instagram"></i></a>
-                                  <a href="https://www.linkedin.com/in/kenrickramsay" title="LinkedIn+" target="_blank"><i class="fa fa-linkedin"></i></a> 
-                                  <a href="https://dribbble.com/Kenrick_Ramsay" title="Dribbble" target="_blank"><i class="fa fa-dribbble"></i></a>
-                                  <a href="https://github.com/BlckShadow" title="Github" target="_blank"><i class="fa fa-github"></i></a>
-                              </div>
-                          </div>  <!-- socials -->
-
-                      </nav><!-- END side menu -->
-					<!-- END main-menu-container -->
-					
-					<!-- SEARCH READ DOCUMENTATION -->
-					<ul class="cd-header-buttons">
-						<li><a class="cd-search-trigger" href="#cd-search"><span></span></a></li>
-					</ul> <!-- cd-header-buttons -->
-					<div id="cd-search" class="cd-search">
-						<form class="form-search" id="searchForm" action="page-search-results.html" method="get">
-							<input type="text" value="" name="q" id="q" placeholder="Search...">
-						</form>
-					</div>
-					
-				  </div>
-				  <!-- END header-wrapper -->
-				  
+            <!-- BUTTON --> 
+            <div class="menu-btn-respons-container2">
+              <a id="cd-menu-trigger" href="#"><span class="cd-menu-icon"></span></a>
+            </div>
+				  </div> <!-- END header-wrapper -->
 				</header>
+                      
+        <!-- SIDE MENU -->      
+        <nav id="cd-lateral-nav" class="font-poppins">
+
+          <ul id="nav-onepage" class="cd-navigation cd-single-item-wrapper">
+             <li><a href="index.html">Home</a></li>
+            <li><a href="about-me.html">About</a></li>
+             <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="resume_template/resume.html">Resume</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul> <!-- cd-single-item-wrapper -->
+          
+          <div class="cd-navigation socials text-center">
+            <div class="footer2-soc-a">
+             <a href="https://www.instagram.com/splashofink/" title="Instagram" target="_blank"><i class="fa fa-instagram"></i></a>
+	     <a href="https://www.linkedin.com/in/kenrickramsay" title="LinkedIn+" target="_blank"><i class="fa fa-linkedin"></i></a> 
+	     <a href="https://dribbble.com/Kenrick_Ramsay" title="Dribbble" target="_blank"><i class="fa fa-dribbble"></i></a>
+	     <a href="https://github.com/BlckShadow" title="Github" target="_blank"><i class="fa fa-github"></i></a>
+            </div>
+          </div>  <!-- socials -->
+          
+        </nav><!-- END side menu -->
+        
+      <!-- SLIDING CONTENT -->
+      <div class="sliding-content"><!-- need for menu -->  
        
         <!-- PAGE TITLE LARGE 3 IMG -->
         <div class="page-title-large3-cont bg-gray" style="background-image: url(images/portfolio/projects-single-bg.jpg);background-size: cover;">
